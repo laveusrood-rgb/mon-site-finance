@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez comment générer des revenus passifs grâce à la finance et monétiser votre site avec Google AdSense. Conseils, stratégies et astuces pour réussir.">
+    <meta name="keywords" content="finance, revenus passifs, Google AdSense, monétisation, investissement, argent en ligne">
+    <title>Finance & Revenus Passifs | Monétisez avec Google AdSense</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #f59e0b;
+            --light: #f8fafc;
+            --dark: #1e293b;
+            --gray: #64748b;
+            --light-gray: #e2e8f0;
+            --success: #10b981;
+            --danger: #ef4444;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+            color: var(--secondary);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 8px 12px;
+            border-radius: 6px;
+        }
+        
+        nav ul li a:hover {
+            color: var(--secondary);
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(37, 99, 235, 0.9), rgba(37, 99, 235, 0.7)), url('https://placehold.co/1920x800/2563eb/ffffff?text=Finance+et+Revenus') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 120px 0;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .btn:hover {
+            background-color: #d97706;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid white;
+            margin-left: 15px;
+        }
+        
+        .btn-outline:hover {
+            background-color: white;
+            color: var(--primary);
+        }
+        
+        /* Features */
+        .features {
+            padding: 100px 0;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            color: var(--gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        .feature-card p {
+            color: var(--gray);
+        }
+        
+        /* AdSense Section */
+        .adsense-section {
+            padding: 100px 0;
+            background-color: var(--light-gray);
+        }
+        
+        .adsense-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .adsense-text {
+            flex: 1;
+        }
+        
+        .adsense-text h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .adsense-text p {
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+        
+        .adsense-image {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .adsense-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Strategies */
+        .strategies {
+            padding: 100px 0;
+            background-color: white;
+        }
+        
+        .strategy-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .tab-btn {
+            padding: 12px 24px;
+            background-color: var(--light-gray);
+            border: none;
+            margin: 5px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .tab-btn.active {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .strategy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .strategy-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+        
+        .strategy-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .strategy-img {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .strategy-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .strategy-card:hover .strategy-img img {
+            transform: scale(1.1);
+        }
+        
+        .strategy-info {
+            padding: 20px;
+        }
+        
+        .strategy-info h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+        
+        .strategy-info p {
+            color: var(--gray);
+            margin-bottom: 15px;
+        }
+        
+        .badge {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 100px 0;
+            background-color: var(--light-gray);
+        }
+        
+        .testimonial-slider {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .testimonial-slide {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            opacity: 0;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            transition: opacity 0.5s;
+        }
+        
+        .testimonial-slide.active {
+            opacity: 1;
+            position: relative;
+        }
+        
+        .testimonial-text {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: var(--dark);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .author-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+        }
+        
+        .author-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .author-info h4 {
+            font-size: 1.1rem;
+            color: var(--dark);
+            margin-bottom: 5px;
+        }
+        
+        .author-info p {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        .slider-controls {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .slider-btn {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 0 10px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s;
+        }
+        
+        .slider-btn:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        /* Call to Action */
+        .cta {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            text-align: center;
+        }
+        
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta p {
+            max-width: 700px;
+            margin: 0 auto 40px;
+            font-size: 1.1rem;
+        }
+        
+        .cta .btn {
+            background-color: white;
+            color: var(--primary);
+            font-size: 1.1rem;
+            padding: 15px 40px;
+        }
+        
+        .cta .btn:hover {
+            background-color: var(--light-gray);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 80px 0 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: var(--secondary);
+        }
+        
+        .footer-column p {
+            color: #94a3b8;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-radius: 50%;
+            transition: background-color 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--primary);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+        
+        /* AdSense Placeholder */
+        .adsense-placeholder {
+            background-color: #f1f5f9;
+            border: 2px dashed #cbd5e1;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .adsense-placeholder p {
+            color: #64748b;
+            margin-bottom: 10px;
+        }
+        
+        .adsense-placeholder .btn {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 20px;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 0 10px;
+            }
+            
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .adsense-content {
+                flex-direction: column;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu {
+                display: block;
+            }
+            
+            nav ul {
+                display: none;
+                width: 100%;
+                margin-top: 20px;
+            }
+            
+            nav ul.show {
+                display: flex;
+                flex-direction: column;
+                background-color: var(--primary-dark);
+                padding: 20px 0;
+                border-radius: 10px;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.3rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .adsense-section, .strategies, .testimonials, .cta {
+                padding: 60px 0;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Animation on scroll */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s, transform 0.6s;
+        }
+        
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i>💰</i>
+                <span>FinancePro</span>
+            </div>
+            <div class="mobile-menu">☰</div>
+            <nav>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#adsense">AdSense</a></li>
+                    <li><a href="#strategies">Stratégies</a></li>
+                    <li><a href="#temoignages">Témoignages</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="container">
+            <h1>Générez des Revenus Passifs avec la Finance & Google AdSense</h1>
+            <p>Découvrez comment créer un flux de revenus stable en ligne grâce à la finance intelligente et la monétisation avec Google AdSense. Des stratégies éprouvées pour réussir.</p>
+            <div>
+                <a href="#strategies" class="btn">Démarrer Maintenant</a>
+                <a href="#adsense" class="btn btn-outline">En savoir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="services">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <h2>Nos Services Clés</h2>
+                <p>Des solutions complètes pour maximiser vos revenus en ligne grâce à la finance numérique et la monétisation intelligente.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">📈</div>
+                    <h3>Stratégies de Monétisation</h3>
+                    <p>Des méthodes éprouvées pour transformer votre contenu en revenus grâce à Google AdSense et d'autres solutions de monétisation.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">📊</div>
+                    <h3>Analyse Financière</h3>
+                    <p>Comprenez les performances de votre site et optimisez vos revenus grâce à une analyse financière approfondie et des tableaux de bord.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Optimisation SEO</h3>
+                    <p>Attirez plus de trafic qualifié vers votre site grâce à des techniques avancées de référencement naturel pour augmenter vos revenus AdSense.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AdSense Section -->
+    <section class="adsense-section" id="adsense">
+        <div class="container">
+            <div class="adsense-content">
+                <div class="adsense-text animate-on-scroll">
+                    <h2>Google AdSense : La Clé de la Monétisation</h2>
+                    <p>Google AdSense est la solution la plus populaire pour monétiser votre site web ou blog. En affichant des publicités pertinentes, vous pouvez générer des revenus passifs à chaque clic ou impression.</p>
+                    <p>Notre expertise vous guide à travers le processus d'approbation, l'optimisation des emplacements publicitaires et l'analyse des performances pour maximiser vos revenus.</p>
+                    <ul style="margin: 20px 0; color: white;">
+                        <li style="margin: 10px 0;">✅ Approbation facile avec nos conseils</li>
+                        <li style="margin: 10px 0;">✅ Optimisation des revenus par page</li>
+                        <li style="margin: 10px 0;">✅ Analyse détaillée des performances</li>
+                        <li style="margin: 10px 0;">✅ Stratégies de croissance du trafic</li>
+                    </ul>
+                    <a href="#contact" class="btn">Obtenir une Consultation</a>
+                </div>
+                <div class="adsense-image animate-on-scroll">
+                    <img src="https://placehold.co/500x400/2563eb/ffffff?text=Google+AdSense" alt="Google AdSense">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategies Section -->
+    <section class="strategies" id="strategies">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <h2>Stratégies de Revenus Passifs</h2>
+                <p>Découvrez différentes approches pour générer des revenus stables grâce à la finance numérique et la monétisation en ligne.</p>
+            </div>
+            <div class="strategy-tabs">
+                <button class="tab-btn active" data-tab="blog">Blog & Contenu</button>
+                <button class="tab-btn" data-tab="investissements">Investissements</button>
+                <button class="tab-btn" data-tab="e-commerce">E-commerce</button>
+            </div>
+            <div class="tab-content active" id="blog">
+                <div class="strategy-grid">
+                    <div class="strategy-card animate-on-scroll">
+                        <div class="strategy-img">
+                            <img src="https://placehold.co/400x200/f59e0b/ffffff?text=Blog+Finance" alt="Blog Finance">
+                        </div>
+                        <div class="strategy-info">
+                            <span class="badge">AdSense</span>
+                            <h3>Blog de Finance Personnelle</h3>
+                            <p>Créez un blog sur la gestion de l'argent, les investissements ou l'épargne. Monétisez avec AdSense et des affiliations financières.</p>
+                            <a href="#" class="btn" style="padding: 8px 16px; font-size: 0.9rem;">En savoir plus</a>
+                        </div>
+                    </div>
+                    <div class="strategy-card animate-on-scroll">
+                        <div class="strategy-img">
+                            <img src="https://placehold.co/400x200/2563eb/ffffff?text=SEO+Contenu" alt="SEO Contenu">
+                        </div>
+                        <div class="strategy-info">
+                            <span class="badge">SEO</span>
+                            <h3>Contenu à Haut Potentiel</h3>
+                            <p>Identifiez des mots-clés financiers lucratifs et créez du contenu de qualité qui attire du trafic organique et génère des revenus AdSense.</p>
+                            <a href="#" class="btn" style="padding: 8px 16px; font-size: 0.9rem;">En savoir plus</a>
+                        </div>
+                    </div>
+                    <div class="strategy-card animate-on-scroll">
+                        <div class="strategy-img">
+                            <img src="https://placehold.co/400x200/10b981/ffffff?text=Monétisation" alt="Monétisation">
+                        </div>
+                        <div class="strategy-info">
+                            <span class="badge">Diversifié</span>
+                            <h3>Monétisation Multiple</h3>
+                            <p>Combinez AdSense avec des affiliations, produits numériques et services pour maximiser vos revenus passifs.</p>
+                            <a href="#" class="btn" style="padding: 8px 16px; font-size: 0.9rem;">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="investissements">
+                <div class="strategy-grid">
+                    <div class="strategy-card animate-on-scroll">
+                        <div class="strategy-img">
+                            <img src="https://placehold.co/400x200/8b5cf6/ffffff?text=Actions" alt="Actions">
+                        </div>
+                        <div class="strategy-info">
+                            <span class="badge">Long terme</span>
+                            <h3>Investissement en Bourse</h3>
+                            <p>Investissez dans des actions de qualité pour générer des dividendes réguliers et une croissance du capital à long terme.</p>
+                            <a href="#" class="btn" style="padding: 8px 16px; font-size: 0.9rem;">En savoir plus</a>
+                        </div>
+                    </div>
+                    <div class="strategy-card animate-on-scroll">
+                        <div class="strategy-img">
+                            <img src="https://placehold.co/400x200/06b6d4/ffffff?text=Immobilier" alt="Immobilier">
+                        </div>
+                        <div class="strategy-info">
+                            <span class="badge">Stable</span>
+                            <h3>Immobilier Numérique</h3>
+                            <p>Investissez dans des biens immobiliers via des plateformes de crowdfunding immobilier pour des revenus locatifs passifs.</p>
+                            <a href="#" class="btn" style="padding: 8px 16px; font-size: 0.9rem;">En savoir plus</a>
+                        </div>
+                    </div>
+                    <div class="strategy-card animate-on-scroll">
+                        <div class="strategy-img">
+                            <img src="https://placehold.co/400x200/ef4444/ffffff?text=Crypto" alt="Crypto">
+                        </div>
+                        <div class="strategy-info">
+                            <span class="badge">Risque</span>
+                            <h3>Cryptomonnaies</h3>
+                            <p>Investissez dans des cryptomonnaies stables pour générer des rendements passifs grâce au staking et aux intérêts.</p>
+                            <a href="#" class="btn" style="padding: 8px 16px; font-size: 0.9rem;">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="e-commerce">
+                <div class="strategy-grid">
+                    <div class="strategy-card animate-on-scroll">
+                        <div class="strategy-img">
+                            <img src="https://placehold.co/400x200/84cc16/ffffff?text=Dropsipping" alt="Dropsipping">
+                        </div>
+                        <div class="strategy-info">
+                            <span class="badge">Sans stock</span>
+                            <h3>Dropshipping</h3>
+                            <p>Créez une boutique en ligne sans gérer de stock. Vendez des produits financiers ou d'épargne à une clientèle ciblée.</p>
+                            <a href="#" class="btn" style="padding: 8px 16px; font-size: 0.9rem;">En savoir plus</a>
+                        </div>
+                    </div>
+                    <div class="strategy-card animate-on-scroll">
+                        <div class="strategy-img">
+                            <img src="https://placehold.co/400x200/f97316/ffffff?text=Produits" alt="Produits">
+                        </div>
+                        <div class="strategy-info">
+                            <span class="badge">Numérique</span>
+                            <h3>Produits Numériques</h3>
+                            <p>Créez et vendez des ebooks, formations ou outils financiers pour générer des revenus passifs récurrents.</p>
+                            <a href="#" class="btn" style="padding: 8px 16px; font-size: 0.9rem;">En savoir plus</a>
+                        </div>
+                    </div>
+                    <div class="strategy-card animate-on-scroll">
+                        <div class="strategy-img">
+                            <img src="https://placehold.co/400x200/ec4899/ffffff?text=Affiliation" alt="Affiliation">
+                        </div>
+                        <div class="strategy-info">
+                            <span class="badge">Commission</span>
+                            <h3>Programme d'Affiliation</h3>
+                            <p>Recommandez des services financiers et gagnez des commissions sur chaque vente générée via vos liens d'affiliation.</p>
+                            <a href="#" class="btn" style="padding: 8px 16px; font-size: 0.9rem;">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AdSense Placeholder -->
+    <div class="container">
+        <div class="adsense-placeholder animate-on-scroll">
+            <p>Publicité Google AdSense</p>
+            <p>Cet espace est réservé à une publicité Google AdSense pour monétiser ce contenu.</p>
+            <a href="https://www.google.com/adsense/" target="_blank" class="btn">En savoir plus sur AdSense</a>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="temoignages">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <h2>Témoignages de Nos Utilisateurs</h2>
+                <p>Découvrez ce que nos clients disent de leurs expériences avec nos stratégies de revenus passifs et de monétisation AdSense.</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-text">
+                        "Grâce aux conseils de FinancePro, j'ai pu faire approuver mon site par Google AdSense en seulement 2 semaines. Mes revenus ont augmenté de 300% en 3 mois grâce à l'optimisation des emplacements publicitaires."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <img src="https://placehold.co/100/2563eb/ffffff?text=ML" alt="Marie Leroy">
+                        </div>
+                        <div class="author-info">
+                            <h4>Marie Leroy</h4>
+                            <p>Blogueuse Finance, Lyon</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-text">
+                        "J'étais débutant en finance en ligne. Le programme complet de FinancePro m'a appris à créer du contenu rentable et à monétiser efficacement. J'ai maintenant un revenu passif stable de 2000€/mois."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <img src="https://placehold.co/100/f59e0b/ffffff?text=TP" alt="Thomas Petit">
+                        </div>
+                        <div class="author-info">
+                            <h4>Thomas Petit</h4>
+                            <p>Indépendant, Marseille</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-text">
+                        "L'analyse financière détaillée et les recommandations personnalisées ont transformé mon site. Le trafic a doublé et mes revenus AdSense ont triplé en 6 mois. Un investissement très rentable."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <img src="https://placehold.co/100/10b981/ffffff?text=SL" alt="Sophie Laurent">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sophie Laurent</h4>
+                            <p>Consultante, Paris</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn prev">←</button>
+                <button class="slider-btn next">→</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <h2>Prêt à Générer des Revenus Passifs ?</h2>
+            <p>Rejoignez des milliers d'utilisateurs qui ont déjà transformé leur approche de la finance en ligne. Obtenez votre consultation gratuite dès aujourd'hui.</p>
+            <a href="#" class="btn">Obtenir ma Consultation Gratuite</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>FinancePro</h3>
+                    <p>Votre partenaire de confiance pour générer des revenus passifs grâce à la finance intelligente et la monétisation en ligne.</p>
+                    <div class="social-links">
+                        <a href="#"><i>📱</i></a>
+                        <a href="#"><i>📘</i></a>
+                        <a href="#"><i>📷</i></a>
+                        <a href="#"><i>🐦</i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Monétisation AdSense</a></li>
+                        <li><a href="#">Optimisation SEO</a></li>
+                        <li><a href="#">Analyse Financière</a></li>
+                        <li><a href="#">Stratégies de Contenu</a></li>
+                        <li><a href="#">Formation en Ligne</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Ressources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Blog Finance</a></li>
+                        <li><a href="#">Guides PDF</a></li>
+                        <li><a href="#">Webinaires</a></li>
+                        <li><a href="#">Calculatrices</a></li>
+                        <li><a href="#">Études de Cas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p>Email: contact@financepro.com</p>
+                    <p>Téléphone: +33 1 23 45 67 89</p>
+                    <p>Adresse: 123 Rue de la Finance, 75001 Paris</p>
+                    <p>Horaires: Lun-Ven 9h-18h</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FinancePro. Tous droits réservés. | <a href="#" style="color: #94a3b8;">Mentions Légales</a> | <a href="#" style="color: #94a3b8;">Politique de Confidentialité</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('nav ul').classList.remove('show');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Tab functionality
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active class from all buttons and tabs
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+                
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                // Show corresponding tab
+                const tabId = this.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        // Testimonial slider
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.testimonial-slide');
+        const totalSlides = slides.length;
+        
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[n].classList.add('active');
+        }
+        
+        document.querySelector('.next').addEventListener('click', function() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        });
+        
+        document.querySelector('.prev').addEventListener('click', function() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        });
+        
+        // Auto-rotate testimonials every 8 seconds
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }, 8000);
+
+        // Animation on scroll
+        const animateElements = document.querySelectorAll('.animate-on-scroll');
+        
+        function checkAnimation() {
+            animateElements.forEach(el => {
+                const elementTop = el.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    el.classList.add('visible');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', checkAnimation);
+        window.addEventListener('load', checkAnimation);
+
+        // Form submission (simulated)
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                if (this.textContent.includes('Consultation') || this.textContent.includes('Démarrer')) {
+                    e.preventDefault();
+                    alert('Merci pour votre intérêt ! Notre équipe vous contactera sous 24h pour organiser votre consultation gratuite.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
